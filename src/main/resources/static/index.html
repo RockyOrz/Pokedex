@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+        }
+    </style>
+
+</head>
+<body>
+<h1>Welcome to Pokedex</h1>
+
+    <form action="pokemon" method="get">
+        <label for="id">Pokemon:</label>
+        <select id="id" name="id">
+            <option value="1">#1 Bulbasaur</option>
+            <option value="2">#2 Ivysaur</option>
+            <option value="3">#3 Venusaur</option>
+            <option value="4">#4 Charmander</option>
+            <option value="5">#5 Charmander</option>
+            <option value="6">#6 Charizard</option>
+            <option value="7">#7 Squirtle</option>
+            <option value="8">#8 Wartortle</option>
+            <option value="9">#9 Blastoise</option>
+        </select>
+        <input type="submit" value="Search">
+    </form>
+
+&ensp;
+
+    <h2>You may also like to:</h2>
+    <a href="pokemon" methods="get">Show All Pokemon</a>
+
+&ensp;
+<br/>
+<br/>
+<!--<h2>Upload an image for a pokemon</h2>-->
+
+<!--<form action="insertImage" method="POST" enctype="multipart/form-data">-->
+<!--    <pre>-->
+<!--        <input type="hidden" name="_method" value="PUT" />-->
+<!--        Please type a Pokemon ID: <input type="text" name="id" />-->
+
+<!--        Please select a file to upload: <input type="file" name="file" />-->
+
+<!--        <input type="submit" value="Insert" />-->
+<!--    </pre>-->
+<!--</form>-->
+<img  src="Image/tenor.gif"  alt="Image not found"/>
+</body>
+</html>

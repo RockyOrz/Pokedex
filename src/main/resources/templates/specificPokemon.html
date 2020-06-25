@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 5px;
+        }
+        th {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+<h1>The pokemon you are looking for</h1>
+
+    <img th:src="@{getImage/{id}(id=${pokemon.id})}" th:width="150" th:height="150"/>
+
+<table style="width:35%" th:align ="center">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>main type</th>
+        <th>sub type</th>
+    </tr>
+    <tr>
+        <td th:text="${pokemon.id}"></td>
+        <td th:text="${pokemon.pokemon_name}"></td>
+        <td th:text="${pokemon.main_type}"></td>
+        <td th:text="${pokemon.sub_type}"></td>
+    </tr>
+</table>
+
+</body>
+</html>

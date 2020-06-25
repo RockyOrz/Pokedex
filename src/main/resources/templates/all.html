@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Pokedex</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        form {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <h1>All Pokemons Infomation</h1>
+    <tbody>
+    <tr th:each="pokemon: ${pokemons}">
+        <br>
+        <td th:text="${pokemon.id}"></td>
+        <td th:text="${pokemon.pokemon_name}"></td>
+
+        <br/>
+        <img th:src="@{pokemon/Image/{id}(id=${pokemon.id})}" th:method="get" th:width="150" th:height="150"/>
+    </tr>
+    </tbody>
+</body>
+</html>
