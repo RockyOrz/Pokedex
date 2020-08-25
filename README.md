@@ -1,3 +1,3 @@
 # Pokedex
-Pokemon Illustration Book/n
+Pokemon Illustration Book\
 A Pokedex website demo for study use.
